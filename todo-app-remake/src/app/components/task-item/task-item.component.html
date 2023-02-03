@@ -1,0 +1,11 @@
+<div class="task-item-container"  [ngClass]="{ reminder: task.reminder }" (dblclick)="toggleReminder(task)">
+  <div class="task-day">
+    <p>{{ task.text }}</p>
+    <p>{{ task.day }}</p>
+  </div>
+  <div class="icon-holder">
+    <p>
+      <fa-icon [icon]="faTimes" class = "delete-icon" (click) = "deleteButtonClick(task)"></fa-icon>
+    </p>
+  </div>
+</div>

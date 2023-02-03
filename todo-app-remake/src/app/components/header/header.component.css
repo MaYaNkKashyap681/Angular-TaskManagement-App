@@ -1,0 +1,53 @@
+/* General Navbar Styling CSS */
+nav {
+  padding: 0.6rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.6px solid lightgrey;
+  box-shadow: 0 0 4px lightgray;
+}
+
+.nav-links-container {
+  display: flex;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.logo span {
+  font-weight: bold;
+  color: royalblue;
+}
+
+/* Links Styling */
+.nav-links {
+  margin-left: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  font-weight: 200;
+}
+
+/* Right Section of Date and Day Handling */
+.current-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-date > span:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.current-date span:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: bold;
+}

@@ -1,0 +1,17 @@
+<div class="aboutContainer">
+  <div class="appAbout">
+    <h1>{{title}}</h1>
+    <p>
+      {{text}}
+    </p>
+  </div>
+  <div class="devContact">
+    <div class="devImage">
+      <img src="{{ devImage }}" />
+    </div>
+    <span>Mayank Kashyap</span>
+  </div>
+  <a [routerLink]="['/']" class="routingLink">
+    <app-button color="#000000" text="Go Back" lighterColor="gray"></app-button
+  ></a>
+</div>

@@ -1,0 +1,13 @@
+<button
+  [ngStyle]="
+    hovered === true
+      ? { 'background-color': color }
+      : { 'background-color': lighterColor }
+  "
+  class="btn"
+  (mouseenter)="changeHover()"
+  (mouseleave)="changeHover()"
+  (click)="toggleAddTask()"
+>
+  {{ text }}
+</button>

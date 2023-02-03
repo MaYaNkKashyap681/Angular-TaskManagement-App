@@ -1,0 +1,51 @@
+.task-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(238, 233, 233);
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.task-day {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-day > p:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: royalblue;
+}
+
+.task-day > p:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.icon-holder {
+  background-color: tomato;
+  padding: 6px;
+  color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease-in-out;
+}
+
+.delete-icon {
+  font-size: 30px;
+}
+
+.icon-holder:hover {
+  cursor: pointer;
+  background-color: rgb(252, 112, 87);
+}
+
+.reminder {
+  border-left: 5px solid green;
+}

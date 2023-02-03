@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="add-button">
+    <h1>My Task's</h1>
+    <app-button
+      color={{_color}}
+      text={{_text}}
+      lighterColor={{_lighterColor}}
+      (togglerAdd)="handleToggleAdd()"
+    ></app-button>
+  </div>
+  <div class="main-task">
+    <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+    <app-task-item
+      *ngFor="let task of taskList"
+      [task]="task"
+      (deleteHandler)="deleteTask($event)"
+      (toggleHandler)="handleToggle($event)"
+    ></app-task-item>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<nav>
+  <div class="nav-links-container">
+    <div class="logo">Track<span>Daily</span></div>
+    <ul class="nav-links">
+      <a [routerLink]="['/']" class = "routingLink"><li>Home</li></a>
+      <a [routerLink]="['/about']" class= "routingLink"><li>About</li></a>
+    </ul>
+  </div>
+  <div class="current-date">
+    <span>{{ time | date : "mediumDate" }}</span>
+    <span>{{ time | date : "EEEE" }}</span>
+  </div>
+</nav>
